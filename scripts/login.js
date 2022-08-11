@@ -8,10 +8,10 @@ function handleOnLoad(email) {
     window.location = "/GreenTakeout/screens/Customer.html";
   } else if (email == "restaurant" && pass == "password") {
     localStorage.setItem("user", email);
-    window.location = "../screens/Restaurant.html";
+    window.location = "/GreenTakeout/screens/Restaurant.html";
   } else if (email == "driver" && pass == "password") {
     localStorage.setItem("user", email);
-    window.location = "../screens/Driver.html";
+    window.location = "/GreenTakeout/screens/Driver.html";
   } else if (
     email != "customer" ||
     pass != "password" ||
@@ -32,6 +32,6 @@ function handleRegister(email) {
     error.innerHTML = "You must fill out all fields";
   } else {
     localStorage.setItem("user", fname);
-    window.location = "../screens/Customer.html";
+    window.location = "/GreenTakeout/screens/Customer.html";
   }
 }

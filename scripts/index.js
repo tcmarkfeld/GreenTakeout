@@ -81,9 +81,9 @@ function routeMainPage() {
   if (addy == "" || city == "" || state == "" || zip == "") {
     alert("You must fill out all fields");
   } else if (user == null) {
-    window.location = "../index.html";
+    window.location = "/GreenTakeout/index.html";
   } else {
-    window.location = "../screens/Home.html";
+    window.location = "/GreenTakeout/screens/Home.html";
   }
 }
 
@@ -116,9 +116,9 @@ function getUser() {
 
 function handleLogout() {
   localStorage.clear();
-  window.location = "../index.html";
+  window.location = "/GreenTakeout/index.html";
 }
 
 function handleOrderClick() {
-  window.location = "../screens/Order.html";
+  window.location = "/GreenTakeout/screens/Order.html";
 }
