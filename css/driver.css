@@ -1,0 +1,23 @@
+.order-container {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-driver {
+    padding: 10px;
+    text-align: center;
+}
+
+.order-li {
+    margin-bottom: 35px !important;
+}
+
+.order-ul {
+    list-style: none;
+}
+
+.driver-dashboard {
+    text-align: center;
+}

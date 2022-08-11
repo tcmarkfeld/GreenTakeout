@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="../css/Stripe.css" />
+</head>
+<body>
+    <div class="col-xl-6 col-lg-6 mb-30" data-aos="fade-left" data-aos-duration="1200">
+        <form id="payment-form" class=".formStripe">
+          <div id="payment-element">
+            <!--Stripe.js injects the Payment Element-->
+          </div>
+          <button id="submit" class="buttonStripe">
+            <div class="spinner hidden" id="spinner"></div>
+            <span id="button-text">Pay now</span>
+          </button>
+          <div id="payment-message" class="hidden"></div>
+        </form>
+    </div>
+
+    <script src="https://js.stripe.com/v3/"></script>
+<script src="../scripts/Stripe.js" defer></script>
+</body>
+</html>

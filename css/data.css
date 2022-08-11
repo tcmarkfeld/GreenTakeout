@@ -1,0 +1,18 @@
+body {
+    overflow-y: scroll;
+}
+
+.graph-container {
+margin-top: 25px;
+}
+
+#myLineChart {
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+#myLineChart1 {
+    margin-top: 15px !important;
+    background-color: aliceblue;
+    border-radius: 10px;
+}

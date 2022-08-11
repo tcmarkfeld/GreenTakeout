@@ -1,0 +1,60 @@
+:root {
+  --main-color: rgb(71, 168, 50)
+}
+
+body {
+  background-color: rgb(242, 240, 236) !important;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login-form {
+  background-color: white;
+  padding-bottom: 30px;
+  border-radius: 10px;
+}
+
+.display-4 {
+  margin-top: -10px;
+  font-size: 30px;
+  color: gray;
+  font-family: dekko;
+  text-align: center;
+}
+h1 {
+  color: black;
+  padding-top: 40px;
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+.reg {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+h2 > * {
+  color: var(--main-color);
+  font-size: 20px;
+  text-shadow: 2px 2px black;
+}
+
+input {
+  border: 2px solid var(--main-color);
+  border-radius: 10px;
+  color: black;
+  margin: 7px;
+}
+
+#navBarLogo {
+  width: 80px;
+  height: 80px;
+}
+
+.dropdown > * {
+  font-size: 20px;
+  list-style-type: none;
+}
+
+#navbarDropdown > * {
+  list-style-type: none;
+}

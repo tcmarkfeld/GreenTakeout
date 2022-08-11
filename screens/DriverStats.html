@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Stats</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="../css/home.css" rel="stylesheet">
+    <link href="../css/driverStats.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="color: rgb(71, 168, 50);">GREENTAKEOUT</a>
+            <ul class="navbar-nav home-ul">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" onclick="handleLogout()">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="back-wrapper">
+        <a class="back-a" href="./Driver.html"><i class="arrow left"></i> Back</a>
+    </div>
+    <div class="chart-container">
+        <canvas id="myLineChart"></canvas><div style="text-align: center; margin-top: 40px;">You earned $244 more for driving an electric vehicle!</div>
+        <canvas id="myLineChart1"></canvas><div style="text-align: center; margin-top: 40px;">You delivered 169 orders!</div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script>
+      
+      const labels = [
+          'April',
+          'May',  
+          'June',
+          'July',
+          'August',
+        ];
+      
+        const data = {
+          labels: labels,
+          datasets: [{
+            label: 'Monthly Earnings ($)',
+            backgroundColor: 'rgb(122, 18, 18)',
+            borderColor: 'rgb(122, 18, 18)',
+            data: [500, 538, 562, 437, 201],
+          },
+          {
+            label: 'Non-EV Drivers ($)',
+            data: [470, 475, 490, 400, 159],
+            borderColor: 'rgb(75, 192, 192)',
+            backgroundColor: 'rgb(75, 192, 192)',
+          }]
+        };
+      
+        const config = {
+          type: 'line',
+          data: data,
+          options: {}
+        };
+      </script>
+
+    <script>
+        const data1 = {
+        labels: [
+          'April',
+          'May',  
+          'June',
+          'July',
+          'August',
+        ],
+        datasets: [{
+            label: 'Number of Orders Delivered',
+            data: [35, 38, 46, 30, 20],
+            backgroundColor: [
+            'rgb(84, 111, 160)',
+            'rgb(92, 84, 160)',
+            'rgb(160, 84, 99)',
+            'rgb(26, 84, 35)',
+            'rgb(160, 130, 75)',
+            ],
+            hoverOffset: 4
+        }]
+        };
+
+        const config1 = {
+            type: 'bar',
+            data: data1,
+            options: {
+                scales: {
+                y: {
+                    beginAtZero: true
+                }
+                }
+            },
+        };
+
+        const myLineChart1 = new Chart(
+        document.getElementById('myLineChart1'),
+        config1
+        );
+    </script>
+      
+      <script>
+        const myLineChart = new Chart(
+          document.getElementById('myLineChart'),
+          config
+        );
+      </script>
+
+    <!-- Footer -->
+    <footer class="py-3 bg-dark">
+        <div class="row align-items-center footer-container">
+            <div class="col">
+                <ul class="footer-ul">
+                    <p class="footer-title">GREENTAKEOUT</p>
+                    <li class="footer-item">
+                      <a class="nav-link" href="./Customer.html">Home</a> 
+                      <a class="nav-link" href="./Home.html">Food</a> 
+                      <a class="nav-link" href="./InstantRx.html">InstantRX</a>
+                      <a class="nav-link" href="./Data.html">Data</a>  
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+<script src="../scripts/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js" integrity="sha256-+8RZJua0aEWg+QVVKg4LEzEEm/8RFez5Tb4JBNiV5xA=" crossorigin="anonymous"></script>
+
+</body>
+</html>

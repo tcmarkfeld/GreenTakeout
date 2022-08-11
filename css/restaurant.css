@@ -1,0 +1,36 @@
+.menu-container {
+    padding: 50px !important;
+    display: flex;
+    align-items: center !important;
+    flex-direction: column;
+}
+
+.drop-area {
+    margin-top: 15px;
+}
+
+.my-form {
+    justify-content: center;
+}
+
+.fileElem {
+    margin: 10px;
+}
+
+.form-p {
+    font-weight: 500;
+    font-size: medium;
+}
+
+.label {
+    margin-top: 2px;
+}
+
+.vegan-wrapper {
+    margin-top: 35px !important;
+}
+
+.btn-save {
+    background-color: rgb(71, 168, 50) !important;
+    margin-top: 35px;
+}
