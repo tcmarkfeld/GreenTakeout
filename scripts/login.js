@@ -5,7 +5,7 @@ function handleOnLoad(email) {
     error.innerHTML = "You must fill out all fields";
   } else if (email == "customer" && pass == "password") {
     localStorage.setItem("user", email);
-    window.location = "/GreenTakeout/screens/Customer.html";
+    window.location = "../screens/Customer.html";
   } else if (email == "restaurant" && pass == "password") {
     localStorage.setItem("user", email);
     window.location = "../screens/Restaurant.html";
