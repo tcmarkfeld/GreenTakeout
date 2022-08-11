@@ -11,6 +11,7 @@
 
 .my-form {
     justify-content: center;
+    text-align: center;
 }
 
 .fileElem {
@@ -23,7 +24,7 @@
 }
 
 .label {
-    margin-top: 2px;
+    margin-top: 0px;
 }
 
 .vegan-wrapper {
@@ -33,4 +34,8 @@
 .btn-save {
     background-color: rgb(71, 168, 50) !important;
     margin-top: 35px;
+}
+
+.form-file-upload {
+    margin-left: 95px;
 }
