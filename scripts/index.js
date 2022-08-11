@@ -104,10 +104,10 @@ function getUser() {
   var buttons = document.getElementById("login-buttons");
   if (user == null) {
     buttons.innerHTML = `<li>
-    <a class="login-button" href="./screens/Login.html">Login</a>
+    <a class="login-button" href="/GreenTakeout/index.html">Login</a>
     </li>
     <li>
-        <a class="login-button" href="./screens/Register.html">Register</a>
+        <a class="login-button" href="/GreenTakout/screens/Register.html">Register</a>
     </li>`;
   } else {
     buttons.innerHTML = `<li class="nav-item" style="color: white;">Welcome back ${user}!</li>`;
